@@ -5,8 +5,8 @@
   "main": "index.tsx",
   "scripts": {
     "start": "PORT=3050 URL_FRONTEND=http://localhost:3050 URL_API=http://localhost:3049 webpack serve --config webpack.js",
-    "build": "PORT=3050 URL_FRONTEND=http://astronauts.zerotosudo.eu URL_API=http://localhost:3049 webpack --config webpack.js",
-    "start-prod": "PORT=3050 URL_FRONTEND=http://astronauts.zerotosudo.eu URL_API=http://localhost:3049 node server.js"
+    "build": "PORT=3050 URL_FRONTEND=http://astronauts.zerotosudo.eu URL_API=http://api.astronauts.zerotosudo.eu webpack --config webpack.js",
+    "start-prod": "PORT=3050 URL_FRONTEND=http://astronauts.zerotosudo.eu URL_API=http://api.astronauts.zerotosudo.eu node server.js"
   },
   "keywords": [],
   "author": "",
