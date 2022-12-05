@@ -2,7 +2,7 @@ import { superpowersEnum } from 'src/enums'
 
 
 interface pagination {
-    per_page: number,
+    limit: number,
     total_results: number
 }
 
