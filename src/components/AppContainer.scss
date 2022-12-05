@@ -1,0 +1,45 @@
+@import '../../node_modules/@ordelogy/ordelogy-fe-lib/dist/styles/vars';
+
+
+.html-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    border: 1px solid $medium-grey;
+    border-radius: $big-radius;
+    margin: 25px;
+}
+
+.app-container--header {
+    display: flex;
+    font-size: $biggest-font-size;
+    font-weight: $widest-font-weight;
+    color: $darkness-grey;
+    background-color: $light-grey;
+    border-bottom: 1px solid $medium-grey;
+    padding: 15px 5px;
+}
+
+.app-container--header--icon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.app-container--header--title {
+    cursor: pointer;
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .app-container {
+        width: 100%;
+        max-width: $desktop-breakpoint;
+        border-radius: 0;
+        border: 0;
+        margin: 0;
+    }
+}

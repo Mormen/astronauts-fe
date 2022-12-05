@@ -1,0 +1,52 @@
+@import '../../node_modules/@ordelogy/ordelogy-fe-lib/dist/styles/vars';
+
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loading-spinner--animation 3s linear infinite;
+    -moz-animation: loading-spinner--animation 3s linear infinite;
+    -o-animation: loading-spinner--animation 3s linear infinite;
+    animation: loading-spinner--animation 3s linear infinite;
+}
+
+@-webkit-keyframes loading-spinner--animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loading-spinner--animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes loading-spinner--animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-spinner--animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"module": "esnext",
+		"target": "es6",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"lib": ["dom", "es5", "es6", "es2015", "es7", "es2016", "es2017", "es2018", "es2019", "es2020"],
+		"paths": {
+			"src/*": ["./src/*"],
+            "store/*": ["./src/store/*"],
+			"myUtils/*": ["./src/myUtils/*"]
+		},
+		"skipLibCheck": true,
+		"typeRoots": [ 
+			"node_modules/@types",
+			"src/customTypings"
+		]
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
