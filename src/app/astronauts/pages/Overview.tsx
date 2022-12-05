@@ -114,7 +114,7 @@ const AstronautsOverview: React.FC = React.memo(() => {
             <div>
                 <Pagination
                     totalResults={astronautsData.pagination.total_results}
-                    perPage={astronautsData.pagination.per_page}
+                    perPage={astronautsData.pagination.limit}
                 />
             </div>
         </div>
