@@ -40,11 +40,19 @@ const AstronautsTable: React.FC = React.memo(() => {
                 <TheadTr>
                     <Th
                         className="
-                            width-35-db text-align-left-db 
-                            width-35-btb text-align-left-btb
+                            width-15-db text-align-left-db 
+                            width-15-btb text-align-left-btb
                         "
                     >
-                        Full name
+                        Name
+                    </Th>
+                    <Th
+                        className="
+                            width-20-db text-align-left-db 
+                            width-20-btb text-align-left-btb
+                        "
+                    >
+                        Surname
                     </Th>
                     <Th
                         className="
@@ -141,7 +149,10 @@ const AstronautsTableRow: React.FC<{ astronaut: astronautType }> = React.memo(({
     return (
         <TbodyTr loading={deleteAstronautLoading}>
             <Td>
-                {astronaut.name} {astronaut.surname}
+                {astronaut.name}
+            </Td>
+            <Td>
+                {astronaut.surname}
             </Td>
             <Td>
                 {convertDateTime(astronaut.birthdate)}
