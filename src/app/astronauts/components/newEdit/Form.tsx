@@ -68,10 +68,10 @@ const AstronautNewEditForm: React.FC<Props> = React.memo(({
 			}))
 		} else {
 			dispatch(initForm(form, {
-				name: astronautData.name,
-				surname: astronautData.surname,
-				birthdate: astronautData.birthdate,
-				superpower: astronautData.superpower
+				name: astronautData.astronaut.name,
+				surname: astronautData.astronaut.surname,
+				birthdate: astronautData.astronaut.birthdate,
+				superpower: astronautData.astronaut.superpower
 			}))
 		}
 	}, [])

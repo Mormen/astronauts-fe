@@ -14,7 +14,11 @@ export interface astronautType {
     superpower: superpowersEnum
 }
 
-export interface astronautsType {
+export interface astronautResultType {
+    astronaut: astronaut
+}
+
+export interface astronautsResultType {
     astronauts: astronautType[],
     pagination: pagination
 }

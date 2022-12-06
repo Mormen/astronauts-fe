@@ -1,21 +1,21 @@
 import api from './index'
 
 import {
-    astronautType,
-    astronautsType
+    astronautsResultType,
+    astronautResultType
 } from 'src/types/api'
 
 
 const atronautsApi = api.injectEndpoints({
     endpoints: (build) => ({
-        getAstronauts: build.query<astronautsType, { filters: string }>({
+        getAstronauts: build.query<astronautsResultType, { filters: string }>({
             query: (payload) => {
                 const { filters } = payload
                 return `/astronauts${filters}`
             },
             providesTags: ["ASTRONAUT"]
         }),
-        getAstronaut: build.query<astronautType, { astronautId: string }>({
+        getAstronaut: build.query<astronautResultType, { astronautId: string }>({
             query: (payload) => {
                 const { astronautId } = payload
                 return `/astronauts/${astronautId}`
